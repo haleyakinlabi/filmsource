@@ -129,6 +129,12 @@ nav {
     right: 50%;
     bottom: 200px;
 }
-
+.footer{
+    position: absolute;
+    width: 100vw;
+    height: 5em;
+    bottom: -20px;
+    background-color: rgb(233, 16, 164);
+}
 
 

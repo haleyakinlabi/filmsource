@@ -1,5 +1,6 @@
 import React from 'react'
 import BurgerMenu from '../components/BurgerMenu'
+import Footer from '../components/Footer'
 
 export const Home = () => {
   return (
@@ -11,6 +12,8 @@ export const Home = () => {
           <div className='home2'></div>
         </div>
         <div className='homeBorder'></div>
+        <Footer />
+
     </div>
   )
 }
