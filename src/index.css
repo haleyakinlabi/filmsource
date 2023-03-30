@@ -1,23 +1,22 @@
 @import './tailwind.css';
 
-.App {
+.background {
     background: linear-gradient(to right, #9860be, #e8a0da, rgb(233, 16, 164), rgb(1, 1, 73));
     height: 100vh;
     width: 100vw;
   }
 
-* {
-    margin: 0;
-    box-sizing: border-box;
-}
-
   /* ---------------- Navbar and burger menu ------------------ */
 nav {
-    width: 40%;
+    width: 100vw;
     height: 5em;
     display: flex;
     justify-content: flex-start;
     padding: 1em;
+    box-sizing: border-box;
+    color: white;
+    background-color: rgb(233, 16, 164);
+    gap: 1%;
 }
 
 .burger-menu {
@@ -39,10 +38,11 @@ nav {
 }
 
 .menu {
-    width: 40%;
-    height: 100vh;
+    width: 30%;
+    height: 23%;
     top: 0;
     z-index: -1;
+    background-color:rgba(255, 255, 255, 0.1);
 }
 
 .pages{
@@ -50,8 +50,6 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    width: 40%;
-    height: 30%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: large;
     color: white;
@@ -67,7 +65,7 @@ nav {
     display: inherit;
 }
 
-/* ----- animations--------- */
+/* ----- animations for burgermenu--------- */
 /* clicked */
 .burger-bar.clicked:nth-child(1){
     transform: rotate(45deg) translate(0.75em, 1.25em);

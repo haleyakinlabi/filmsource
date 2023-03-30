@@ -1,13 +1,25 @@
-import './App.css';
-import './index.css';
-import BurgerMenu from './components/BurgerMenu';
+import "./App.css";
+import "./index.css";
+import { Home } from "./screens/Home";
+import { Contact } from "./screens/Contact";
+import { Movies } from "./screens/Movies";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 
 function App() {
   return (
-    <div className="App">
-      <BurgerMenu />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        
+      
+          <Routes>
+            <Route path="/" element={<Home/>} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="movies" element={<Movies />} />
+          </Routes>
+        
+      </div>
+    </BrowserRouter>
   );
 }
 
