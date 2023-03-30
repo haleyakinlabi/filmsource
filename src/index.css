@@ -16,6 +16,8 @@ nav {
     color: white;
     background-color: rgb(233, 16, 164);
     gap: 1%;
+    position: fixed;
+    top: 0;
 }
 
 .burger-menu {
@@ -36,8 +38,10 @@ nav {
 
 }
 .menu {
-    top: 0;
-    z-index: -1;
+    top: 30;
+    z-index: 1;
+    position: fixed;
+    margin-top: 5%;
 }
 .pages{
     display: flex;
@@ -45,7 +49,8 @@ nav {
     flex-direction: row;
     text-decoration: none;
     list-style: none;
-    gap: 2%;
+    gap: 10%;
+    z-index: 1;
 }
 li a {
     border: none;
@@ -54,6 +59,7 @@ li a {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-decoration: none;
     list-style: none;
+    z-index: 1;
   }
 li a:hover{
     color: rgb(1, 1, 73);
@@ -61,10 +67,12 @@ li a:hover{
 /* ------------- sliding menu ------------------ */
 .hidden {
     display: none;
+    z-index: 1;
 }
 
 .visible {
     display: inherit;
+    z-index: 1;
 }
 
 /* ----- animations for burgermenu--------- */
@@ -91,57 +99,23 @@ li a:hover{
 }
 /* Home Screen  */
 
-.homeFlexBox{
-    display: flex;
-    flex-direction: row;
+.homeScreen{
+    height: 800px;
+    width: 100vw;
+    border: 1px solid white;
     justify-content: center;
-    align-self: center;
-    align-items: center;
-    gap: 1%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    text-align: center;
 }
-.home1{
-    height: 400px;
-    width: 300px;
-    background-image: url(./assets/mImg3.jpeg);
-    background-size: cover;
-    background-position: center;
-    border-right: 2px solid white;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
-    transition: transform 0.8s ease-in-out;
+.hscreen{
+    margin-top: 100px;
 }
-.home1:hover {
-    transform: rotate(360deg);
-}
-.home2{
-    height: 400px;
-    width: 200px;
-    border-right: 2px solid #e8a0da;
-    border-top: 2px solid #e8a0da;
-    border-bottom: 2px solid #e8a0da;
-}
-.homeBorder{
-    height: 350px;
-    width: 200px;
-    border: 2px solid #9860be;
-    position: absolute;
-    top: 200px;
-    left: 50%;
-    right: 50%;
-    bottom: 200px;
-}
+/* -------------------------- */
 .footer{
-    
     width: 100vw;
     height: 5em;
-    bottom: -20px;
+    bottom: 0px;
     background-color: rgb(233, 16, 164);
-}
-.welcome{
-    color: white;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: fixed;
 }
 /* Movie Screen  */
 .moviesScreen{
