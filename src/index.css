@@ -36,7 +36,6 @@ nav {
     background-color: white;
 
 }
-
 .menu {
     top: 0;
     z-index: -1;
@@ -89,3 +88,47 @@ nav {
     transform: rotate(0) translate(0);
     transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
 }
+/* Home Screen  */
+
+.homeFlexBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    gap: 1%;
+}
+.home1{
+    height: 400px;
+    width: 300px;
+    background-image: url(./assets/mImg3.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-right: 2px solid white;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    transition: transform 0.8s ease-in-out;
+}
+.home1:hover {
+    transform: rotate(360deg);
+}
+.home2{
+    height: 400px;
+    width: 200px;
+    border-right: 2px solid #e8a0da;
+    border-top: 2px solid #e8a0da;
+    border-bottom: 2px solid #e8a0da;
+}
+.homeBorder{
+    height: 400px;
+    width: 200px;
+    border: 2px solid rgb(1, 1, 73);
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    right: 50%;
+    bottom: 200px;
+}
+
+
+

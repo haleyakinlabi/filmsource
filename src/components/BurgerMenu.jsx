@@ -19,7 +19,7 @@ const BurgerMenu = () => {
   };
 
   return (
-    <div style={{ width: "100%", height: "100vh" }}>
+    <div>
       <nav>
         <div className="burger-menu" onClick={updateMenu}>
           <div className={burger_class}></div>
