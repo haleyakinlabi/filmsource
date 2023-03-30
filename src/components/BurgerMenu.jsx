@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-
 const BurgerMenu = () => {
   // to change burger classes
   const [burger_class, setBurgerClass] = useState("burger-bar unclicked");
@@ -32,26 +31,21 @@ const BurgerMenu = () => {
 
       <div className={menu_class}>
         <div className="pages">
-
             <a href="/" onclick="event.preventDefault()">
-                <button>
-                    Home
+                <button className="navBtn">
+                    HOME
                 </button>
             </a>
-
-            <a href="/contact" onclick="event.preventDefault()">
-                <button>
-                    Contact
-                </button>
-            </a>
-
             <a href="/movies" onclick="event.preventDefault()">
-                <button>
-                    Movies
+                <button className="navBtn">
+                    MOVIES
                 </button>
             </a>
-
-
+            <a href="/contact" onclick="event.preventDefault()">
+                <button className="navBtn">
+                    CONTACT
+                </button>
+            </a>
         </div>
       </div>
     </div>
