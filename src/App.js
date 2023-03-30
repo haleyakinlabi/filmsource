@@ -3,20 +3,23 @@ import "./index.css";
 import { Home } from "./screens/Home";
 import { Contact } from "./screens/Contact";
 import { Movies } from "./screens/Movies";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Footer from "./components/Footer";
+import BurgerMenu from "./components/BurgerMenu";
 
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="App">
-          <Routes>
-            <Route path="/" element={<Home/>} />
-            <Route path="contact" element={<Contact />} />
-            <Route path="movies" element={<Movies />} />
-          </Routes>
-      </div>
-    </BrowserRouter>
+    <div className="background">
+      <BurgerMenu /> 
+      <Home /> 
+      <Movies />
+      <Contact />
+      <Footer />
+    </div>
+    
+    
+    
+    
   );
 }
 

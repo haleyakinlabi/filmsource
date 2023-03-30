@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const BurgerMenu = () => {
   // to change burger classes
@@ -30,22 +31,12 @@ const BurgerMenu = () => {
       </nav>
 
       <div className={menu_class}>
-        <div className="pages">
-            <a href="/" onclick="event.preventDefault()">
-                <button className="navBtn">
-                    HOME
-                </button>
-            </a>
-            <a href="/movies" onclick="event.preventDefault()">
-                <button className="navBtn">
-                    MOVIES
-                </button>
-            </a>
-            <a href="/contact" onclick="event.preventDefault()">
-                <button className="navBtn">
-                    CONTACT
-                </button>
-            </a>
+        <div>
+            <ul className="pages">
+                <li className="navBtn"><AnchorLink href="#home">Home</AnchorLink></li>
+                <li className="navBtn"><AnchorLink href="#movies">Movies</AnchorLink></li>
+                <li className="navBtn"><AnchorLink href="#contact">Contact</AnchorLink></li>
+            </ul>
         </div>
       </div>
     </div>
