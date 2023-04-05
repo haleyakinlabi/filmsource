@@ -1,7 +1,7 @@
 import React from 'react';
 import Swal from 'sweetalert2';
 
-const apiKey = '5d593632af7aedffd2101f31c162f834';
+const apiKey = '';
 
 export const Search = () => {
   const handleSearch = (event) => {

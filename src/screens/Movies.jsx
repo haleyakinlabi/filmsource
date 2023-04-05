@@ -1,11 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import Movie from "../components/Movie";
 
-<<<<<<< HEAD
 const api_key = "";
-=======
-const api_key = "5d593632af7aedffd2101f31c162f834";
->>>>>>> 3701c20 (search/landing)
 
 export const Movies = () => {
     const [movies, setMovies] = useState([]);
@@ -32,11 +28,7 @@ export const Movies = () => {
     };
 
     return (
-<<<<<<< HEAD
-        <div className="container mx-auto">
-=======
         <div className="container mx-auto" id='movies'>
->>>>>>> 3701c20 (search/landing)
             <h1 className="text-2xl font-medium mb-4 text-center p-3">
                 Popular Movies
             </h1>
