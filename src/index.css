@@ -10,10 +10,10 @@ nav {
     width: 100vw;
     height: 5em;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     padding: 1em;
     box-sizing: border-box;
-    color: white;
+    color: black;
     background-color: rgb(233, 16, 164);
     gap: 1%;
     position: fixed;
@@ -136,7 +136,7 @@ li a:hover{
 
   .searchInput{
     height: 30px;
-    width: 300px;   
+    width: 200px;   
     border-radius: 5px;
     outline: none;
     box-shadow: 0px 0px 5px 1px rgba(5, 3, 3, 0.5);
@@ -144,7 +144,7 @@ li a:hover{
   .searchBtn{
     background-color: none;
     border: 1px solid white;
-    margin-left: 2%;
+    margin-left: 10px;
     padding: 8px;
     color: white;
     border-radius: 8px;

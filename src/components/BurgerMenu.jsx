@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import { Search } from "./Search";
 
 const BurgerMenu = () => {
   // to change burger classes
@@ -28,6 +29,7 @@ const BurgerMenu = () => {
           <div className={burger_class}></div>
         </div>
         <p>LOGO</p>
+        <Search />
       </nav>
 
       <div className={menu_class}>
