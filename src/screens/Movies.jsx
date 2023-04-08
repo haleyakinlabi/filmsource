@@ -29,8 +29,8 @@ export const Movies = () => {
 
     return (
         <div className="container mx-auto" id='movies'>
-            <h1 className="text-2xl font-medium mb-4 text-center p-3">
-                Popular Movies
+            <h1 className="text-2xl font-medium mb-4 text-center p-3" id='popularMovies'>
+                Top Movies
             </h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-4">
                 {movies.map((movie) => (

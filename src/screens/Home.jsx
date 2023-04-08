@@ -5,34 +5,35 @@ import { Search } from "../components/Search";
 const TMDB_API_KEY = "";
 
 export const Home = () => {
-  const [movie, setMovie] = useState(null);
+  const [poster, setPoster] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const getRandomMovieImage = async () => {
+  const getRandomMoviePoster = async () => {
     setIsLoading(true);
 
     try {
       const { data } = await axios.get(
-        `https://api.themoviedb.org/3/movie/top_rated?api_key=${TMDB_API_KEY}&language=en-US`
+        `https://api.themoviedb.org/3/movie/popular?api_key=${TMDB_API_KEY}&language=en-US`
       );
 
       const randomIndex = Math.floor(Math.random() * data.results.length);
       const randomMovie = data.results[randomIndex];
 
-      if (!randomMovie.backdrop_path) {
-        return getRandomMovieImage();
+      if (!randomMovie.poster_path) {
+        return getRandomMoviePoster();
       }
 
-      setMovie(randomMovie);
+      setPoster(randomMovie.poster_path);
       setIsLoading(false);
     } catch (error) {
       setError(error.message);
       setIsLoading(false);
     }
   };
+
   useEffect(() => {
-    getRandomMovieImage();
+    getRandomMoviePoster();
   }, []);
 
   if (isLoading) {
@@ -45,11 +46,11 @@ export const Home = () => {
 
   return (
     <div id="home" className="homeScreen">
-      {movie && (
+      {poster && (
         <div className="homeDiv">
           <img
-            src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`}
-            alt={movie.title}
+            src={`https://image.tmdb.org/t/p/w500${poster}`}
+            alt="Random movie poster"
             className="homeImage"
           />
           <div className="welcome">

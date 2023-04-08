@@ -36,7 +36,7 @@ const BurgerMenu = () => {
         <div>
             <ul className="pages">
                 <li className="navBtn"><AnchorLink href="#home">Home</AnchorLink></li>
-                <li className="navBtn"><AnchorLink href="#movies">Movies</AnchorLink></li>
+                <li className="navBtn"><AnchorLink href="#movies">Top Movies</AnchorLink></li>
                 <li className="navBtn"><AnchorLink href="#contact">Contact</AnchorLink></li>
             </ul>
         </div>
