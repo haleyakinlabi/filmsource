@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Search } from "../components/Search";
 
-const TMDB_API_KEY = "";
+const TMDB_API_KEY = process.env.REACT_APP_TMDB_API_KEY;
 
 export const Home = () => {
   const [poster, setPoster] = useState(null);
