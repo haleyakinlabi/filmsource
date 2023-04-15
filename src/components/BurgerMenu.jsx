@@ -28,7 +28,6 @@ const BurgerMenu = () => {
           <div className={burger_class}></div>
           <div className={burger_class}></div>
         </div>
-        <p>LOGO</p>
         <Search />
       </nav>
 

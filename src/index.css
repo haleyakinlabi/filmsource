@@ -1,182 +1,198 @@
-@import './tailwind.css';
+@import "./tailwind.css";
 
 .background {
-    background: linear-gradient(to right, #9860be, #e8a0da, rgb(233, 16, 164), rgb(1, 1, 73));
-    width: 100vw;
-  }
+  background: linear-gradient(
+    to right,
+    #9860be,
+    #e8a0da,
+    rgb(233, 16, 164),
+    rgb(1, 1, 73)
+  );
+  width: 100vw;
+}
 
-  /* ---------------- Navbar and burger menu ------------------ */
+/* ---------------- Navbar and burger menu ------------------ */
 nav {
-    width: 100vw;
-    height: 5em;
-    display: flex;
-    justify-content: space-between;
-    padding: 1em;
-    box-sizing: border-box;
-    color: black;
-    background-color: rgb(233, 16, 164);
-    gap: 1%;
-    position: fixed;
-    top: 0;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    z-index: 1;
+  width: 100vw;
+  height: 5em;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  box-sizing: border-box;
+  color: black;
+  background-color: rgb(233, 16, 164);
+  gap: 1%;
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 .burger-menu {
-    height: 100%;
-    width: 4em;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    cursor: pointer;
+  height: 100%;
+  width: 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  cursor: pointer;
 }
 
 .burger-bar {
-    width: 4em;
-    height: 0.5em;
-    border-radius: 0.5em;
-    background-color: white;
+  width: 4em;
+  height: 0.5em;
+  border-radius: 0.5em;
+  background-color: white;
 }
 .menu {
-    top: 30;
-    z-index: 1;
-    position: fixed;
-    margin-top: 80px;
-    width: 300px;
-    height: 30px;
-    background: linear-gradient(to right, #e8a0da, rgb(1, 1, 73));
-    justify-content: center;
+  top: 30;
+  z-index: 1;
+  position: fixed;
+  margin-top: 80px;
+  width: 300px;
+  height: 30px;
+  background: linear-gradient(to right, #e8a0da, rgb(1, 1, 73));
+  justify-content: center;
 }
-.pages{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    text-decoration: none;
-    list-style: none;
-    gap: 15%;
-    z-index: 1;
+.pages {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-decoration: none;
+  list-style: none;
+  gap: 15%;
+  z-index: 1;
 }
 li a {
-    border: none;
-    cursor: pointer;
-    color: white;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-decoration: none;
-    list-style: none;
-    z-index: 1;
-  }
-li a:hover{
-    color: rgb(233, 16, 164);
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  z-index: 1;
 }
+li a:hover {
+  color: rgb(233, 16, 164);
+}
+.logo{
+  height: 80px;
+  width: 70px;
+  padding-bottom: 20px;
+}
+
 /* ------------- sliding menu ------------------ */
 .hidden {
-    display: none;
-    z-index: 1;
+  display: none;
+  z-index: 1;
 }
 
 .visible {
-    display: inherit;
-    z-index: 1;
+  display: inherit;
+  z-index: 1;
 }
 
 /* ----- animations for burgermenu--------- */
 /* clicked */
-.burger-bar.clicked:nth-child(1){
-    transform: rotate(45deg) translate(0.75em, 1.25em);
-    transition: ease-out 0.5s;
+.burger-bar.clicked:nth-child(1) {
+  transform: rotate(45deg) translate(0.75em, 1.25em);
+  transition: ease-out 0.5s;
 }
 
-.burger-bar.clicked:nth-child(2){
-    transform: scale(0.1);
-    transition: ease-out 0.5s;
+.burger-bar.clicked:nth-child(2) {
+  transform: scale(0.1);
+  transition: ease-out 0.5s;
 }
 
-.burger-bar.clicked:nth-child(3){
-    transform: rotate(135deg) translate(-0.5em, 1em);
-    transition: ease-out 0.5s;
+.burger-bar.clicked:nth-child(3) {
+  transform: rotate(135deg) translate(-0.5em, 1em);
+  transition: ease-out 0.5s;
 }
 
 /* unclicked */
 .burger-bar.unclicked {
-    transform: rotate(0) translate(0);
-    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+  transform: rotate(0) translate(0);
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
 }
 /* Home Screen  */
 
-.homeScreen{
-    height: 750px;
-    width: 100vw;
-    border-top: 1px solid white;
+.homeScreen {
+  height: 750px;
+  width: 100vw;
+  border-top: 1px solid white;
 }
-.homeDiv{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 70px;
+.homeDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
 }
-.homeImage{
-    height: 680px;
-    width: 50vw;
-    opacity: 40%;
+.homeImage {
+  height: 680px;
+  width: 50vw;
+  opacity: 40%;
 }
 .welcome {
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    background-color: rgb(233, 16, 164);
-    width: 100vw;
-    box-shadow: 0px 0px 5px 1px rgba(5, 3, 3, 0.5)
-  }
-  /* ----------------------- */
-  /* Search */
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: rgb(233, 16, 164);
+  width: 100vw;
+  box-shadow: 0px 0px 5px 1px rgba(5, 3, 3, 0.5);
+}
+/* ----------------------- */
+/* Search */
 
-  .searchInput{
-    height: 30px;
-    width: 200px;   
-    border-radius: 5px;
-    outline: none;
-    box-shadow: 0px 0px 5px 1px rgba(5, 3, 3, 0.5);
-  }
-  .searchBtn{
-    background-color: none;
-    border: 1px solid white;
-    margin-left: 10px;
-    padding: 8px;
-    color: white;
-    border-radius: 8px;
-  }
+.searchInput {
+  height: 30px;
+  width: 200px;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: 0px 0px 5px 1px rgba(5, 3, 3, 0.5);
+}
+.searchBtn {
+  background-color: none;
+  border: 1px solid white;
+  margin-left: 10px;
+  padding: 8px;
+  color: white;
+  border-radius: 8px;
+  height: 45px;
+}
+.searchBar{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
 /* -------------------------- */
-#popularMovies{
-    color: white;
-    margin-top: 100px;
-    font-family: fantasy;
+#popularMovies {
+  color: white;
+  margin-top: 100px;
+  font-family: fantasy;
 }
 
-
-
-
 /* -------------------------- */
-.footer{
-    width: 100vw;
-    height: 5em;
-    bottom: 0px;
-    background-color: rgb(233, 16, 164);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+.footer {
+  width: 100vw;
+  height: 5em;
+  bottom: 0px;
+  background-color: rgb(233, 16, 164);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 /* Movie Screen  */
-.moviesScreen{
-    height: 800px;
-    width: 100vw;
-    border: 1px solid white
+.moviesScreen {
+  height: 800px;
+  width: 100vw;
+  border: 1px solid white;
 }
 
 /* Contact Screen  */
-.contactScreen{
-    height: 800px;
-    width: 100vw;
-    border: 1px solid white
+.contactScreen {
+  height: 800px;
+  width: 100vw;
+  border: 1px solid white;
 }
