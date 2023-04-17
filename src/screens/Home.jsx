@@ -65,7 +65,7 @@ export const Home = () => {
             </h1>
             <p style={{ fontSize: "20px", color: "white" }}>
               Your go-to destination for quick and easy access to movie
-              summaries.
+              summaries!
             </p>
             <p style={{ fontSize: "20px", color: "white" }}>
               Discover your next favorite movie now!
