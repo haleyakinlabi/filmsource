@@ -34,7 +34,7 @@ export const Home = () => {
 
   useEffect(() => {
     getRandomMoviePoster();
-  }, []);
+  },[]);
 
   if (isLoading) {
     return <p>Loading...</p>;
@@ -61,7 +61,7 @@ export const Home = () => {
                 fontSize: "40px",
               }}
             >
-              Welcome to Site Name!
+              Welcome to Filmsource!
             </h1>
             <p style={{ fontSize: "20px", color: "white" }}>
               Your go-to destination for quick and easy access to movie

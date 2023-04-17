@@ -44,7 +44,6 @@ export const Search = () => {
         <input type="text" name="searchInput" placeholder='Search By Title' className='searchInput' />
       </label>
       <button type="submit" className='searchBtn'>Search</button>
-      <img src="../assets/filmSourceLogo.PNG" alt="site logo" className="logo"/>
     </form>
   );
 };

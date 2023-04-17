@@ -28,6 +28,7 @@ const BurgerMenu = () => {
           <div className={burger_class}></div>
           <div className={burger_class}></div>
         </div>
+        <img src="../assets/filmSourceLogo.PNG" alt="site logo" className="logo"/>
         <Search />
       </nav>
 

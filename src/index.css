@@ -76,12 +76,14 @@ li a {
 li a:hover {
   color: rgb(233, 16, 164);
 }
-.logo{
-  height: 80px;
+.logo {
+  height: 90px;
   width: 70px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
+  position: absolute;
+  margin-left: 90px;
+  top: 10px;
 }
-
 /* ------------- sliding menu ------------------ */
 .hidden {
   display: none;
@@ -163,7 +165,7 @@ li a:hover {
   border-radius: 8px;
   height: 45px;
 }
-.searchBar{
+.searchBar {
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -194,5 +196,29 @@ li a:hover {
 .contactScreen {
   height: 800px;
   width: 100vw;
-  border: 1px solid white;
+}
+#contactUS {
+  font-family: fantasy;
+  margin-top: 20px;
+}
+.logoFooter {
+  height: 90px;
+  width: 70px;
+  margin-top: 10px;
+  padding-bottom: 30px;
+}
+.tmdb {
+  height: 50px;
+  margin-top: 15px;
+}
+.footerContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+}
+.createdBy {
+  margin-top: 30px;
+  font-family: fantasy;
+  color: white;
 }

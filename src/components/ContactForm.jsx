@@ -18,7 +18,7 @@ const ContactForm = () => {
 
     return (
         <div className="container mx-auto" id='movies'>
-            <h1 className="text-2xl text-white font-medium mb-4 text-center p-3">
+            <h1 className="text-2xl text-white font-medium mb-4 text-center p-3 " id='contactUS'>
                 Contact Us
             </h1>
             <div className="max-w-md mx-auto mt-10 p-4 bg-gray-100 rounded-md">
