@@ -1,13 +1,13 @@
 import React from 'react';
 import Swal from 'sweetalert2';
 
-const apiKey = '';
+const TMDB_API_KEY = process.env.REACT_APP_TMDB_API_KEY;
 
 export const Search = () => {
   const handleSearch = (event) => {
     event.preventDefault();
     const searchQuery = event.target.searchInput.value;
-    fetch(`https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${searchQuery}`)
+    fetch(`https://api.themoviedb.org/3/search/movie?api_key=${TMDB_API_KEY}&query=${searchQuery}`)
       .then(response => response.json())
       .then(data => {
         const results = data.results;

@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import Movie from "../components/Movie";
 
-const api_key = "";
+const TMDB_API_KEY = process.env.REACT_APP_TMDB_API_KEY;
 
 export const Movies = () => {
     const [movies, setMovies] = useState([]);
@@ -10,7 +10,7 @@ export const Movies = () => {
 
     useEffect(() => {
         const fetchMovies = async () => {
-            const data = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${api_key}&language=en-US&page=${currentPage}`);
+            const data = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${TMDB_API_KEY}&language=en-US&page=${currentPage}`);
             const movies = await data.json();
 
             setMovies(movies.results);
